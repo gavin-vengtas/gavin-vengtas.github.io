@@ -248,16 +248,16 @@ img {
     filter: contrast(100%);
 }
 
-.card:hover .card__image--fence {
-    background-image: url(https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06083212/gravity_drib2.gif);
+.card:hover .card__image--stuck {
+    background-image: url(https://d2kxccve43sr0q.cloudfront.net/spacestuck.gif);
 }
 
-.card:hover .card__image--river {
-    background-image: url(https://drive.google.com/uc?export=download&id=1os3cF2Sv-v9TVeStZVuiODddqeMSY5rz);
+.card:hover .card__image--selfie {
+    background-image: url(https://d2kxccve43sr0q.cloudfront.net/spaceselfie.gif);
 }
 
-.card:hover .card__image--record {
-    background-image: url(https://drive.google.com/uc?export=download&id=1Q3M4_oppUruuDkoDxC99-8o9wLxw9zZc);
+.card:hover .card__image--rider {
+    background-image: url(https://d2kxccve43sr0q.cloudfront.net/moonrider.gif);
 }
 
 .card__content {
@@ -299,20 +299,16 @@ img {
     }
 }
 
-.card__image--flowers {
-    background-image: url(https://unsplash.it/800/600?image=82);
+.card__image--selfie {
+    background-image: url(https://d2kxccve43sr0q.cloudfront.net/spaceselfie.png);
 }
 
-.card__image--river {
-    background-image: url(https://drive.google.com/uc?export=download&id=1vEVSkur2dwNmKnh34rnj3c_pOWy09lJX);
+.card__image--rider {
+    background-image: url(https://d2kxccve43sr0q.cloudfront.net/moonrider.png);
 }
 
-.card__image--record {
-    background-image: url(https://drive.google.com/uc?export=download&id=1BnGu0IpFMR9LeEfiMoZ9wysGrHRRRGE9);
-}
-
-.card__image--fence {
-    background-image: url(https://drive.google.com/uc?export=download&id=1dTDKOhm5BZf67e6biFNpJ-qrxftU8H6u);
+.card__image--stuck {
+    background-image: url(https://d2kxccve43sr0q.cloudfront.net/spacestuck.png);
 }
 
 .card__title {
