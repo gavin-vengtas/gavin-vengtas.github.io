@@ -10,6 +10,10 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
+    <!-- Pre-load gifs -->
+    <link rel="preload" href="https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06083212/gravity_drib2.gif.js" as="image" />
+    <link rel="preload" href="https://drive.google.com/uc?export=download&id=1os3cF2Sv-v9TVeStZVuiODddqeMSY5rz" as="image" />
+    <link rel="preload" href="https://drive.google.com/uc?export=download&id=1Q3M4_oppUruuDkoDxC99-8o9wLxw9zZc" as="image" />
 
 </head>
 
@@ -31,7 +35,7 @@
                         const textArray = ["Software Engineer.", "Budding Scholar.", "Game Master.", "Complete Nerd."];
                         const typingDelay = 150;
                         const erasingDelay = 100;
-                        let newTextDelay = 1000; // Delay between current and next text
+                        let newTextDelay = 0; // Delay between current and next text
                         let textArrayIndex = 0;
                         let charIndex = 0;
 
