@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
     <!-- Pre-load gifs -->
-    <link rel="preload" href="https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06083212/gravity_drib2.gif.js" as="image" />
-    <link rel="preload" href="https://drive.google.com/uc?export=download&id=1os3cF2Sv-v9TVeStZVuiODddqeMSY5rz" as="image" />
-    <link rel="preload" href="https://drive.google.com/uc?export=download&id=1Q3M4_oppUruuDkoDxC99-8o9wLxw9zZc" as="image" />
+    <link rel="preload" href="https://d2kxccve43sr0q.cloudfront.net/spacestuck.gif" as="image" />
+    <link rel="preload" href="https://d2kxccve43sr0q.cloudfront.net/spaceselfie.gif" as="image" />
+    <link rel="preload" href="https://d2kxccve43sr0q.cloudfront.net/moonrider.gif" as="image" />
 
 </head>
 
@@ -92,7 +92,10 @@
             <!--Waves end-->
 
             <section class="dark">
-                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:200px; border-radius: 50%; margin-bottom:15px;">
+                <div class="avatar-light">
+                  <!-- <div class="avatar-light"></div> -->
+                  <img class="avatar" src="https://d2kxccve43sr0q.cloudfront.net/me.png" alt="Avatar" style="width: 200px; border-radius: 50%; margin-bottom: 15px; position: relative; z-index: 2;">
+                </div>             
                 <h1 id="about-title">About Me</h1>
                 <p id="about-content">Beatae, sapiente hic. Quae numquam similique dolorum nihil, quas asperiores deleniti dolorem ea a animi maxime. Ad animi voluptatem voluptates corporis rem dignissimos quos recusandae dolorum dolore ea! Molestias, laudantium!</p>
             </section>
@@ -121,7 +124,7 @@
                 <ul class="cards">
                     <li class="cards__item">
                         <div class="card">
-                            <div class="card__image card__image--fence"></div>
+                            <div class="card__image card__image--stuck"></div>
                             <div class="card__content">
                                 <div class="card__title">Flex</div>
                                 <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
@@ -131,7 +134,7 @@
                     </li>
                     <li class="cards__item">
                         <div class="card glow">
-                            <div class="card__image card__image--river"></div>
+                            <div class="card__image card__image--selfie"></div>
                             <div class="card__content">
                                 <div class="card__title">Flex Grow</div>
                                 <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
@@ -141,7 +144,7 @@
                     </li>
                     <li class="cards__item">
                         <div class="card">
-                            <div class="card__image card__image--record"></div>
+                            <div class="card__image card__image--rider"></div>
                             <div class="card__content">
                                 <div class="card__title">Flex Shrink</div>
                                 <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
