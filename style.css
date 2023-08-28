@@ -150,9 +150,9 @@ img {
     width: 100%;
     margin: 0 auto;
     transform: scale(0.85);
-    filter: blur(5vw);
+    filter: blur(40px);
     background: linear-gradient(270deg, #00fcbd, #7400f9);
-    background-size: 150% 150%;
+    background-size: 100px 100px;
     border-radius: 50%;
     animation: glowmation 10s linear infinite;
   }
