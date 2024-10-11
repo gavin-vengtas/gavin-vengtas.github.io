@@ -343,6 +343,15 @@ img {
   animation: box 0.8s infinite;
 }
 
+@media (max-width: 896px) {
+  .card--visible {
+    border-color: #f48225;
+    color: #f48225;
+    box-shadow: 0 0 0px 0px #00ff00;
+    animation: box 0.8s infinite;
+  }
+}
+
 .card:hover .card__image {
   filter: contrast(100%);
 }
