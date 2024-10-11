@@ -347,7 +347,7 @@ img {
   filter: contrast(100%);
 }
 
-.card:hover .card__image--stuck {
+/* .card:hover .card__image--stuck {
   background-image: url(assets/spacestuck.gif);
 }
 
@@ -357,7 +357,7 @@ img {
 
 .card:hover .card__image--rider {
   background-image: url(assets/moonrider.gif);
-}
+} */
 
 .card__content {
   display: flex;
@@ -398,7 +398,7 @@ img {
   }
 }
 
-.card__image--selfie {
+/* .card__image--selfie {
   background-image: url(assets/spaceselfie.png);
 }
 
@@ -408,7 +408,7 @@ img {
 
 .card__image--stuck {
   background-image: url(assets/spacestuck.png);
-}
+} */
 
 .card__title {
   color: #696969;
