@@ -414,6 +414,86 @@
             </li>
           </ul>
         </section>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            // Preload the GIFs
+            const gifPaths = [
+              "assets/spacestuck.gif",
+              "assets/spaceselfie.gif",
+              "assets/moonrider.gif",
+            ];
+
+            gifPaths.forEach((gifPath) => {
+              const img = new Image();
+              img.src = gifPath;
+            });
+
+            //automatically highlight cards and play gifs on mobile
+            const imagecards = ["spacestuck", "spaceselfie", "moonrider"];
+
+            imagecards.forEach((imagecard) => {
+              // Select the correct image based on the id pattern
+              const image = document.querySelector(`#card--${imagecard}`);
+
+              if (!image) return; // Skip if the image is not found
+
+              // Function to check if screen width is smaller than 896px
+              const isSmallScreen = () => window.innerWidth < 896;
+
+              const observerCallback = (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting && isSmallScreen()) {
+                    // Small screen and element is visible, change image to gif
+                    image.src = `assets/${imagecard}.gif`;
+                  } else if (isSmallScreen()) {
+                    // Small screen and element is not visible, change image to png
+                    image.src = `assets/${imagecard}.png`;
+                  }
+                });
+              };
+
+              const observer = new IntersectionObserver(observerCallback, {
+                threshold: 1.0, // Fully visible
+              });
+
+              // Observe the image element
+              observer.observe(image);
+
+              // Optional: Recheck when window is resized
+              window.addEventListener("resize", () => {
+                if (!isSmallScreen()) {
+                  // Reset the image source to PNG when switching to larger screens
+                  image.src = `assets/${imagecard}.png`;
+                }
+              });
+            });
+
+            const cards = document.querySelectorAll(".card");
+
+            const observerVisible = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting && entry.intersectionRatio === 1) {
+                    // Element is fully visible
+                    entry.target.classList.add("card--visible");
+                  } else {
+                    // Element is partially visible or not visible
+                    entry.target.classList.remove("card--visible");
+                  }
+                });
+              },
+              {
+                threshold: 1.0, // Only trigger when the entire element is visible
+              }
+            );
+
+            // Observe each card
+            cards.forEach((card) => {
+              observerVisible.observe(card);
+            });
+          });
+        </script>
         <!--Waves Container-->
         <div>
           <svg
