@@ -348,15 +348,15 @@ img {
 }
 
 .card:hover .card__image--stuck {
-  background-image: url(assets\spacestuck.gif);
+  background-image: url(assets/spacestuck.gif);
 }
 
 .card:hover .card__image--selfie {
-  background-image: url(assets\spaceselfie.gif);
+  background-image: url(assets/spaceselfie.gif);
 }
 
 .card:hover .card__image--rider {
-  background-image: url(assets\moonrider.gif);
+  background-image: url(assets/moonrider.gif);
 }
 
 .card__content {
@@ -399,15 +399,15 @@ img {
 }
 
 .card__image--selfie {
-  background-image: url(assets\spaceselfie.png);
+  background-image: url(assets/spaceselfie.png);
 }
 
 .card__image--rider {
-  background-image: url(assets\moonrider.png);
+  background-image: url(assets/moonrider.png);
 }
 
 .card__image--stuck {
-  background-image: url(assets\spacestuck.png);
+  background-image: url(assets/spacestuck.png);
 }
 
 .card__title {
